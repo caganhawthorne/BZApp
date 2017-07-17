@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF5EAC791EDDD86600FEF34B /* BathroomObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5EAC781EDDD86600FEF34B /* BathroomObj.swift */; };
+		EF5EAC7B1EDDFA9300FEF34B /* ExhibitObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5EAC7A1EDDFA9300FEF34B /* ExhibitObj.swift */; };
+		EFA5B2621EEF03650032A3BF /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA5B2611EEF03650032A3BF /* WebViewController.swift */; };
+		EFA5B2641F02CF370032A3BF /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA5B2631F02CF370032A3BF /* ModalViewController.swift */; };
+		EFA5B2661F153B800032A3BF /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA5B2651F153B800032A3BF /* MyAnnotation.swift */; };
 		EFCAE7761E6397DB00CA3645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCAE7751E6397DB00CA3645 /* AppDelegate.swift */; };
 		EFCAE7781E6397DB00CA3645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCAE7771E6397DB00CA3645 /* ViewController.swift */; };
 		EFCAE77B1E6397DB00CA3645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCAE7791E6397DB00CA3645 /* Main.storyboard */; };
-		EFCAE77E1E6397DC00CA3645 /* BZ_Prototype.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFCAE77C1E6397DC00CA3645 /* BZ_Prototype.xcdatamodeld */; };
 		EFCAE7801E6397DC00CA3645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCAE77F1E6397DC00CA3645 /* Assets.xcassets */; };
 		EFCAE7831E6397DC00CA3645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCAE7811E6397DC00CA3645 /* LaunchScreen.storyboard */; };
 		EFCAE78E1E6397DC00CA3645 /* BZ_PrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCAE78D1E6397DC00CA3645 /* BZ_PrototypeTests.swift */; };
 		EFCAE7991E6397DC00CA3645 /* BZ_PrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCAE7981E6397DC00CA3645 /* BZ_PrototypeUITests.swift */; };
+		EFCAE7A91E639F1500CA3645 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCAE7A81E639F1500CA3645 /* Mapbox.framework */; };
+		EFCAE7AA1E639F1500CA3645 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFCAE7A81E639F1500CA3645 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +40,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EFCAE7AB1E639F1500CA3645 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EFCAE7AA1E639F1500CA3645 /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		EF5EAC781EDDD86600FEF34B /* BathroomObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BathroomObj.swift; sourceTree = "<group>"; };
+		EF5EAC7A1EDDFA9300FEF34B /* ExhibitObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExhibitObj.swift; sourceTree = "<group>"; };
+		EFA5B2611EEF03650032A3BF /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		EFA5B2631F02CF370032A3BF /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		EFA5B2651F153B800032A3BF /* MyAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
 		EFCAE7721E6397DB00CA3645 /* BZ_Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BZ_Prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCAE7751E6397DB00CA3645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFCAE7771E6397DB00CA3645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EFCAE77A1E6397DB00CA3645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EFCAE77D1E6397DC00CA3645 /* BZ_Prototype.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BZ_Prototype.xcdatamodel; sourceTree = "<group>"; };
 		EFCAE77F1E6397DC00CA3645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFCAE7821E6397DC00CA3645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFCAE7841E6397DC00CA3645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +73,7 @@
 		EFCAE7941E6397DC00CA3645 /* BZ_PrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BZ_PrototypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCAE7981E6397DC00CA3645 /* BZ_PrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BZ_PrototypeUITests.swift; sourceTree = "<group>"; };
 		EFCAE79A1E6397DC00CA3645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFCAE7A81E639F1500CA3645 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFCAE7A91E639F1500CA3645 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +105,7 @@
 		EFCAE7691E6397DA00CA3645 = {
 			isa = PBXGroup;
 			children = (
+				EFCAE7A81E639F1500CA3645 /* Mapbox.framework */,
 				EFCAE7741E6397DB00CA3645 /* BZ_Prototype */,
 				EFCAE78C1E6397DC00CA3645 /* BZ_PrototypeTests */,
 				EFCAE7971E6397DC00CA3645 /* BZ_PrototypeUITests */,
@@ -102,10 +129,14 @@
 				EFCAE7751E6397DB00CA3645 /* AppDelegate.swift */,
 				EFCAE7771E6397DB00CA3645 /* ViewController.swift */,
 				EFCAE7791E6397DB00CA3645 /* Main.storyboard */,
-				EFCAE77F1E6397DC00CA3645 /* Assets.xcassets */,
+				EFA5B2631F02CF370032A3BF /* ModalViewController.swift */,
+				EFA5B2611EEF03650032A3BF /* WebViewController.swift */,
+				EF5EAC7A1EDDFA9300FEF34B /* ExhibitObj.swift */,
+				EFA5B2651F153B800032A3BF /* MyAnnotation.swift */,
+				EF5EAC781EDDD86600FEF34B /* BathroomObj.swift */,
 				EFCAE7811E6397DC00CA3645 /* LaunchScreen.storyboard */,
+				EFCAE77F1E6397DC00CA3645 /* Assets.xcassets */,
 				EFCAE7841E6397DC00CA3645 /* Info.plist */,
-				EFCAE77C1E6397DC00CA3645 /* BZ_Prototype.xcdatamodeld */,
 			);
 			path = BZ_Prototype;
 			sourceTree = "<group>";
@@ -138,6 +169,8 @@
 				EFCAE76E1E6397DA00CA3645 /* Sources */,
 				EFCAE76F1E6397DA00CA3645 /* Frameworks */,
 				EFCAE7701E6397DA00CA3645 /* Resources */,
+				EFCAE7AB1E639F1500CA3645 /* Embed Frameworks */,
+				EFCAE7AC1E639F2F00CA3645 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -191,18 +224,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Cagan Hawthorne";
 				TargetAttributes = {
 					EFCAE7711E6397DA00CA3645 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 47U5496NW8;
+						LastSwiftMigration = 0820;
 					};
 					EFCAE7881E6397DC00CA3645 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = EFCAE7711E6397DA00CA3645;
 					};
 					EFCAE7931E6397DC00CA3645 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = EFCAE7711E6397DA00CA3645;
 					};
 				};
@@ -254,14 +291,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EFCAE7AC1E639F2F00CA3645 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EFCAE76E1E6397DA00CA3645 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA5B2661F153B800032A3BF /* MyAnnotation.swift in Sources */,
 				EFCAE7781E6397DB00CA3645 /* ViewController.swift in Sources */,
-				EFCAE77E1E6397DC00CA3645 /* BZ_Prototype.xcdatamodeld in Sources */,
+				EF5EAC791EDDD86600FEF34B /* BathroomObj.swift in Sources */,
 				EFCAE7761E6397DB00CA3645 /* AppDelegate.swift in Sources */,
+				EFA5B2621EEF03650032A3BF /* WebViewController.swift in Sources */,
+				EFA5B2641F02CF370032A3BF /* ModalViewController.swift in Sources */,
+				EF5EAC7B1EDDFA9300FEF34B /* ExhibitObj.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,8 +387,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -376,8 +435,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -396,6 +457,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -405,10 +467,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 47U5496NW8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BZ_Prototype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hawthorne.BZ-Prototype";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -416,10 +484,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 47U5496NW8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BZ_Prototype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hawthorne.BZ-Prototype";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -431,6 +505,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hawthorne.BZ-PrototypeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BZ_Prototype.app/BZ_Prototype";
 			};
 			name = Debug;
@@ -443,6 +518,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hawthorne.BZ-PrototypeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BZ_Prototype.app/BZ_Prototype";
 			};
 			name = Release;
@@ -454,6 +530,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hawthorne.BZ-PrototypeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = BZ_Prototype;
 			};
 			name = Debug;
@@ -465,6 +542,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hawthorne.BZ-PrototypeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = BZ_Prototype;
 			};
 			name = Release;
@@ -488,6 +566,7 @@
 				EFCAE79F1E6397DC00CA3645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFCAE7A01E6397DC00CA3645 /* Build configuration list for PBXNativeTarget "BZ_PrototypeTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +575,7 @@
 				EFCAE7A21E6397DC00CA3645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFCAE7A31E6397DC00CA3645 /* Build configuration list for PBXNativeTarget "BZ_PrototypeUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,21 +584,9 @@
 				EFCAE7A51E6397DC00CA3645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		EFCAE77C1E6397DC00CA3645 /* BZ_Prototype.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				EFCAE77D1E6397DC00CA3645 /* BZ_Prototype.xcdatamodel */,
-			);
-			currentVersion = EFCAE77D1E6397DC00CA3645 /* BZ_Prototype.xcdatamodel */;
-			path = BZ_Prototype.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = EFCAE76A1E6397DA00CA3645 /* Project object */;
 }
