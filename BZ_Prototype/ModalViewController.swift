@@ -17,8 +17,11 @@ class ModalViewController: UIViewController, WKUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let theURL = URL(string: (myURL)!) {
+        print(myURL)
+        if let theURL = URL(string: (myURL)!)
+        {
             let myRequest = URLRequest(url: theURL)
+            print(myURL)
             webView.load(myRequest)
         }
         self.setNavigationBar()

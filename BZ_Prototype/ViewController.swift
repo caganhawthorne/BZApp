@@ -31,13 +31,13 @@ class ViewController: UIViewController, MGLMapViewDelegate {
                          BathroomObj.init(latitude: 41.831167, longitude: -87.834778),
                          BathroomObj.init(latitude: 41.833639, longitude: -87.830250),
                          BathroomObj.init(latitude: 41.831056, longitude: -87.833056)]
-    let exhibitArray = [ExhibitObj.init(name: "Australia House", url:"https://stage.czs.org/Brookfield-ZOO/Zoo-Animals/Australia-House", lat: 41.834500, long:  -87.835167),
-                        ExhibitObj.init(name: "The Living Coast", url:"https://stage.czs.org/Brookfield-ZOO/Zoo-Animals/Living-Coast", lat: 41.831083, long:  -87.838306),
-                        ExhibitObj.init(name: "Big Cats", url:"https://stage.czs.org/Brookfield-ZOO/Zoo-Animals/Big-Cats", lat: 41.833500, long:  -87.831833)
+    let exhibitArray = [ExhibitObj.init(name: "Australia House", url:"https://www.czs.org/Brookfield-ZOO/Zoo-Animals/Australia-House", lat: 41.834500, long:  -87.835167),
+                        ExhibitObj.init(name: "The Living Coast", url:"https://www.czs.org/Brookfield-ZOO/Zoo-Animals/Living-Coast", lat: 41.831083, long:  -87.838306),
+                        ExhibitObj.init(name: "Big Cats", url:"https://www.czs.org/Brookfield-ZOO/Zoo-Animals/Big-Cats", lat: 41.833500, long:  -87.831833)
     ]
-    let restaurantArray = [ExhibitObj.init(name: "Scoops", url:"https://stage.czs.org/Brookfield-ZOO/Plan-Your-Visit/Dining-Shopping/Dining", lat: 41.831250, long:  -87.834583),
-                          ExhibitObj.init(name: "Bison Prairie Grill", url:"https://stage.czs.org/Brookfield-ZOO/Plan-Your-Visit/Dining-Shopping/Dining", lat: 41.832167, long:  -87.837917),
-                          ExhibitObj.init(name: "BZ Red Hots", url:"https://stage.czs.org/Brookfield-ZOO/Plan-Your-Visit/Dining-Shopping/Dining", lat: 41.832694, long:  -87.830333)
+    let restaurantArray = [ExhibitObj.init(name: "Scoops", url:"https://www.czs.org/Brookfield-ZOO/Plan-Your-Visit/Dining-Shopping/Dining", lat: 41.831250, long:  -87.834583),
+                          ExhibitObj.init(name: "Bison Prairie Grill", url:"https://www.czs.org/Brookfield-ZOO/Plan-Your-Visit/Dining-Shopping/Dining", lat: 41.832167, long:  -87.837917),
+                          ExhibitObj.init(name: "BZ Red Hots", url:"https://www.czs.org/Brookfield-ZOO/Plan-Your-Visit/Dining-Shopping/Dining", lat: 41.832694, long:  -87.830333)
     ]
 
     

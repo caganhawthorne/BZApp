@@ -24,7 +24,7 @@ class WebViewController: UIViewController, WKUIDelegate, MGLMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let myURL = URL(string: "https://stage.czs.org/Brookfield-ZOO/Plan-Your-Visit/Information")
+        let myURL = URL(string: "https://www.czs.org/Brookfield-ZOO/Plan-Your-Visit/Information")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
         
