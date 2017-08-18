@@ -14,6 +14,7 @@ class WebViewController: UIViewController, WKUIDelegate, MGLMapViewDelegate {
 
     var annotation: MGLPointAnnotation!
     var webView: WKWebView!
+    
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)

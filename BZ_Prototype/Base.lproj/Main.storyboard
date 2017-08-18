@@ -29,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem style="plain" id="cyp-Gh-dkn">
+                                    <barButtonItem image="RESTROOMS" style="plain" id="cyp-Gh-dkn">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EEM-mS-OnD">
                                             <rect key="frame" x="20" y="7" width="68" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -46,6 +46,16 @@
                                             <state key="normal" title="Bathrooms"/>
                                             <connections>
                                                 <action selector="toggleBathroomMarkersWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NM1-zU-Znx"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="igQ-eN-AQP">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VGd-xK-aBY">
+                                            <rect key="frame" x="193" y="7" width="112" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Restaurants"/>
+                                            <connections>
+                                                <action selector="toggleRestaurantMarkers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZGI-hy-SIH"/>
                                             </connections>
                                         </button>
                                     </barButtonItem>
@@ -72,12 +82,12 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="Ure-MA-Slc" id="N2t-qA-Uyt"/>
-                        <segue destination="dZy-pI-oet" kind="presentation" identifier="Info" id="ta7-M6-mpj"/>
+                        <segue destination="08d-JP-HOL" kind="presentation" identifier="Info" id="bdh-vI-EqT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1428" y="-23"/>
+            <point key="canvasLocation" x="1426.0869565217392" y="-23.64130434782609"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="kBV-Pb-iMF">
@@ -87,37 +97,15 @@
                         <viewControllerLayoutGuide type="top" id="g3W-la-4yU"/>
                         <viewControllerLayoutGuide type="bottom" id="bsV-rp-drD"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="YsA-yw-f0a">
+                    <view key="view" contentMode="redraw" id="YsA-yw-f0a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QcM-nQ-xNf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="cHL-se-CoJ">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="kRA-DJ-7dX">
-                                            <connections>
-                                                <action selector="backButtonPressed:" destination="08d-JP-HOL" id="Hwo-YF-B1O"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="z0u-K6-rSd">
-                        <barButtonItem key="leftBarButtonItem" title="Done" id="9FQ-rd-YtZ">
-                            <connections>
-                                <action selector="doneButtonPressed:" destination="08d-JP-HOL" id="dtn-0g-YKv"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2FB-NN-g0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2333.3333333333335" y="698.64130434782612"/>
+            <point key="canvasLocation" x="1395.6521739130435" y="700.27173913043487"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="3Wq-vH-RDB">
@@ -142,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgE-jP-qoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2118" y="-4"/>
+            <point key="canvasLocation" x="2267" y="-24"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VDy-8g-Pq1">
@@ -162,23 +150,8 @@
             </objects>
             <point key="canvasLocation" x="524.63768115942037" y="-7.3369565217391308"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="iMy-TO-0jX">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dZy-pI-oet" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nTG-eJ-23L">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="08d-JP-HOL" kind="relationship" relationship="rootViewController" id="CtD-dI-yNO"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H9L-sp-wAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1426.0869565217392" y="698.64130434782612"/>
-        </scene>
     </scenes>
+    <resources>
+        <image name="RESTROOMS" width="147" height="145"/>
+    </resources>
 </document>

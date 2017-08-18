@@ -14,12 +14,14 @@ class ModalViewController: UIViewController, WKUIDelegate {
     var webView: WKWebView!
     var myURL: String!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let myRequest = URLRequest(url: URL(string: myURL!)!)
-        webView.load(myRequest)
-
-        
+        if let theURL = URL(string: (myURL)!) {
+            let myRequest = URLRequest(url: theURL)
+            webView.load(myRequest)
+        }
+        self.setNavigationBar()
 
         // Do any additional setup after loading the view.
     }
@@ -30,14 +32,31 @@ class ModalViewController: UIViewController, WKUIDelegate {
         view = webView
     }
 
+    func setNavigationBar() {
+        let screenSize: CGRect = UIScreen.main.bounds
+        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height * 0.09))
+        let navItem = UINavigationItem(title: "")
+        let doneItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: nil, action: #selector(doneButtonPressed))
+        let backItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.reply, target: nil, action: #selector(backButtonPressed))
+        navItem.rightBarButtonItem = doneItem
+        navItem.leftBarButtonItem = backItem
+        navBar.setItems([navItem], animated: false)
+        self.view.addSubview(navBar)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
-
-    @IBAction func doneButtonPressed(_ sender: Any) {
+    func backButtonPressed() {
+        if(webView.canGoBack){
+            webView.goBack()
+        }
+    }
+    
+     func doneButtonPressed() {
         self.dismiss(animated: true, completion: nil)
     }
 
